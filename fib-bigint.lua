@@ -41,12 +41,3 @@ function bigIntToString(bigInt)
     end
     return str
 end
-
-local value = 1000000
-local start = os.clock()
-local result = fibonacci(value, stringToBigInt("0"), stringToBigInt("1"))
-local finish = os.clock() - start
-
-print("Fibonacci(" .. value .. ")")
-print("Time: " .. finish .. " sec")
-print("Result: " .. bigIntToString(result))
